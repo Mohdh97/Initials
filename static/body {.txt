@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 5px 0; /* Shrink the black section's height */
+    background-color: #2d2d2d; /* Keep the black background */
+    position: relative;
+}
+
+header img {
+    width: 120px; /* Adjust logo size to keep it proportional */
+    margin: 0 auto;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('/static/images/jewelry_image_resized.jpeg') no-repeat center center; /* Center the image */
+    background-size: cover; /* Ensure it covers the entire width and height */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    color: black;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Add semi-transparent white overlay */
+    z-index: 0;
+}
+
+.hero h1, .hero p, .cta-button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #2d2d2d;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+
+
+
+
+.form-section {
+    padding: 30px;
+    background-color: #f2f2f2;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.form-section form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-section form input, .form-section form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #2d2d2d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-section form button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Jewelers - Collection</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+   <header style="background-color: #2d2d2d; padding: 20px; text-align: center;">
+    <img src="/static/images/Lava logo.PNG" alt="Lava Jewelers Logo">
+</header>
+
+
+    <section class="hero">
+        <h1>Your Initials, Your Statement</h1>
+        <p>Discover our exclusive collection featuring personalized Arabic initial rings and necklaces crafted with 18k gold and diamonds.</p>
+        <a href="#form" class="cta-button">Craft Your Masterpiece</a>
+    </section>
+
+    <section id="form" class="form-section">
+        <h3>Craft Your Personalized Jewelry</h3>
+        <form action="/submit" method="POST">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address (Optional):</label>
+    <input type="email" id="email" name="email">
+
+    <label for="initial1">First Initial (Arabic or English):</label>
+<input type="text" id="initial1" name="initial1" maxlength="1" pattern="[a-zA-Z\u0600-\u06FF]" required>
+
+<label for="initial2">Second Initial (Arabic or English):</label>
+<input type="text" id="initial2" name="initial2" maxlength="1" pattern="[a-zA-Z\u0600-\u06FF]" required>
+
+
+    <label for="material">Material Preference:</label>
+    <select id="material" name="material" required>
+        <option value="">Select an option</option>
+        <option value="plain gold">Plain 18k Gold</option>
+        <option value="gold zirconia">18k Gold with Zirconia</option>
+        <option value="gold diamonds">18k Gold with Diamonds</option>
+    </select>
+
+    <label for="type">Type:</label>
+    <select id="type" name="type" required>
+        <option value="">Select an option</option>
+        <option value="necklace">Necklace</option>
+        <option value="ring">Ring</option>
+    </select>
+
+    <button type="submit">Submit Your Request</button>
+</form>
+
+    </section>
+
+    <footer>
+        <p>Contact us via Instagram DM.</p>
+        <p>&copy; 2025 Lava Jewelers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
