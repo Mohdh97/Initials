@@ -38,6 +38,12 @@ def submit_form():
 def thank_you():
     return render_template('thankyou.html')
 
+
+@app.route('/download-submissions')
+def download_submissions():
+    return send_file('submissions.csv', as_attachment=True)
+
+
 if __name__ == "__main__":
     app.run(debug=False, host='0.0.0.0', port=5000)
 
