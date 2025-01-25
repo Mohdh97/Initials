@@ -137,3 +137,25 @@ footer {
     background-color: #2d2d2d;
     color: white;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .hero, .thankyou-hero {
+        background-position: center top; /* Focus on the top of the image */
+        height: auto; /* Allow dynamic height adjustment */
+        padding: 20px 10px;
+    }
+
+    .hero h1, .thankyou-hero h1 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+    }
+
+    .hero p, .thankyou-hero p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+
+    .form-section {
+        width: 100%; /* Make the form section take full width */
+        margin: 10px auto;
+    }
+}
